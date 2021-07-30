@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心动时刻</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .xindong{
+            width: 500px;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin: 0 auto;
+        }
+        .xindong img{
+            animation: meinv 10s linear infinite alternate;
+        }
+        .xintiao{
+            /* margin: 200px; */
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            top: -300px;
+            transform: rotate(45deg);
+            transition: all 1s linear;
+            animation: run 10s linear infinite alternate;
+        }
+        @keyframes meinv{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @keyframes run{
+            25%{
+                transform: rotate(45deg) scale(0.7);
+            }
+            50%{
+                transform: rotate(45deg) scale(1);
+            }
+            60%{
+                transform: rotate(45deg) scale(0.7);
+            }
+            70%{
+                transform: rotate(45deg) scale(1);
+            }
+            75%{
+                transform: rotate(45deg) scale(0.7);
+            }
+            80%{
+                transform: rotate(45deg) scale(1);
+            }
+            85%{
+                transform: rotate(45deg) scale(0.7);
+            }
+            90%{
+                transform: rotate(45deg) scale(1);
+            }
+            92%{
+                transform: rotate(45deg) scale(0.7);
+            }
+            94%{
+                transform: rotate(45deg) scale(1);
+            }
+            96%{
+                transform: rotate(45deg) scale(0.7);
+            }
+            98%{
+                transform: rotate(45deg) scale(1);
+            }
+            99%{
+                transform: rotate(45deg) scale(0.7);
+            }
+            100%{
+                transform: rotate(45deg) scale(1)
+            }
+        }
+        .xintiao div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .xintiao div:nth-child(1){
+            left:-50px
+        }
+        .xintiao div:nth-child(2){
+            top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="xindong">
+        <img src="images/1.jpg" alt="">
+        <div class="xintiao">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
